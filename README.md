@@ -20,7 +20,7 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
-server
+#server
 ~~~
 import socket
 HOST, PORT = '127.0.0.1', 65432
@@ -31,7 +31,7 @@ with socket.create_server((HOST, PORT)) as s:
         while data := conn.recv(1024):
             conn.sendall(data)
 ~~~~
-client
+#client
 ~~~~
 import socket
 HOST, PORT = '127.0.0.1', 65432
@@ -42,11 +42,11 @@ with socket.create_connection((HOST, PORT)) as s:
 
 
 ## OUTPUT:
-server
+#server
 
 <img width="359" alt="server sshot" src="https://github.com/user-attachments/assets/9e946a69-861c-4d1d-b378-0232de7511c9" />
 
-client
+#client
 
 <img width="344" alt="client sshot" src="https://github.com/user-attachments/assets/096c9509-899c-465d-bdc7-4fe2ccc7049e" />
 
