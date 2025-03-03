@@ -38,6 +38,7 @@ HOST, PORT = '127.0.0.1', 65432
 with socket.create_connection((HOST, PORT)) as s:
     s.sendall(b'Vignesh,212224040358')
     print(f'Received: {s.recv(1024)!r}')
+~~~~
 
 
 ## OUTPUT:
